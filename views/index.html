@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Router测试</title>
+</head>
+<body>
+	<h1>Router测试</h1>
+</body>
+</html>
+<script src='/static/js/mod.js'></script>
+<script src="/libs/router.js"></script>
+<script>
+	let Router = require('../libs/router.js')
+	let router = new Router(true);
+	let handler = data => console.log(data);
+
+	router.on('test:add',handler);
+	setTimeout(function (){
+		console.log(router.containHash('TEST'))
+		router.addHash('test');
+	},1000)
+
+
+</script>
