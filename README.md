@@ -22,12 +22,18 @@
 		console.log('test remove')
 	});
 
-	router.addHash('test'); //---增加test到hash
+```
 
-	router.removeHash('test') //--从hash中移除test;
+* off(type,handler) : 移除事件监听
 
-	router.containHash('test') //---hash中是否包含test
+* addHash(hash) : 添加hash
 
-	router.clear() // ---清空hash;
+* removeHash(hash) : 移除hash
+
+* containHash(hash) : 是否包含hash;
+
+* clear() : 清空hash;
+
+* trigger(type) : 触发hash事件
 
 ```
